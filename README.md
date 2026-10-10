@@ -206,6 +206,3 @@ No LICENSE file exists in this repository. Until one is added, all rights are re
 
 **Dependencies fail to install.** Confirm Node ≥ 22.9 (`node -v`) then rerun `npm install` from the repo root (it handles both workspaces). Delete `node_modules` and `package-lock.json`-only issues are rare — prefer `npm ci` when supported.
 
-**Frontend can't reach the backend / proxy errors.** Locally, make sure you started with `npm run dev` at the root — the Vite dev server must be forwarding `/proxy` to `:3001`. In production, confirm the frontend's `VITE_API_URL` is set to the Render URL (no trailing slash).
-
-**CORS errors in the browser console.** The backend only allows origins listed in `CLIENT_URL` (comma-separated). Add your Vercel/preview domain to the Render env vars and redeploy. `localhost` origins won't ntend build runs `tsc` first: fix type errors, don't skip the check. The backend has no build step — a failure there is usually a Node version mismatch or a missing `package.json` script.
