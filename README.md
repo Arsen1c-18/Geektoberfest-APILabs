@@ -188,13 +188,6 @@ The server binds `0.0.0.0` and reads `PORT` from the environment, as container p
 
 **Verify the deploy:** `curl https://<your-render-url>/api/health` should return `{"status":"ok"}`, and the deployed frontend should be able to send at least one request through the proxy. We do not claim any deployment has actually been made in this repository.
 
-## Known limitations and intentional issues
-
-This is a **contribution-focused project with deliberately seeded defects**. Some functionality is knowingly imperfect so Geekstober contributors have real, well-scoped bugs to fix. The complete, up-to-date catalogue (IDs, reproduction steps, acceptance criteria, difficulty labels) lives in **[CONTRIBUTING.md](CONTRIBUTING.md)**. Do not assume any feature listed above is bug-free.
-
-Pre-existing gaps beyond the seeded issues: none known — but if you find an undocumented defect, please report it in a new GitHub issue rather than describing it as a seeded one.
-
-## Contributing
 
 
 
