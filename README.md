@@ -208,12 +208,4 @@ No LICENSE file exists in this repository. Until one is added, all rights are re
 
 **Frontend can't reach the backend / proxy errors.** Locally, make sure you started with `npm run dev` at the root — the Vite dev server must be forwarding `/proxy` to `:3001`. In production, confirm the frontend's `VITE_API_URL` is set to the Render URL (no trailing slash).
 
-**CORS errors in the browser console.** The backend only allows origins listed in `CLIENT_URL` (comma-separated). Add your Vercel/preview domain to the Render env vars and redeploy. `localhost` origins won't work against the deployed backend, and vice versa.
-
-**Missing environment variables.** Compare your `.env` files against `.env.example` in each workspace. Remember `VITE_API_URL` is build-time — changing it requires a rebuild.
-
-**Backend port.** The backend defaults to `3001`; `PORT` is read from the environment, and Render injects its own. If `:3001` is taken locally, free it or override `PORT` in `backend/.env` (then restart).
-
-**Invalid mock API requests.** There are no mock APIs here — if a request fails, check the URL, the method, and CORS as covered above.
-
-**Deployment build failures.** The frontend build runs `tsc` first: fix type errors, don't skip the check. The backend has no build step — a failure there is usually a Node version mismatch or a missing `package.json` script.
+**CORS errors in the browser console.** The backend only allows origins listed in `CLIENT_URL` (comma-separated). Add your Vercel/preview domain to the Render env vars and redeploy. `localhost` origins won't ntend build runs `tsc` first: fix type errors, don't skip the check. The backend has no build step — a failure there is usually a Node version mismatch or a missing `package.json` script.
