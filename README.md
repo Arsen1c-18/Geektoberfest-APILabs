@@ -196,11 +196,7 @@ Pre-existing gaps beyond the seeded issues: none known — but if you find an un
 
 ## Contributing
 
-See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full contributor handbook: setup, the complete intentional-issue catalogue, branch naming, commit conventions, PR requirements, and the definition of done. In short: pick a catalogued issue, claim it in a GitHub issue, branch as `fix/<issue-id>-<slug>`, submit one focused PR, link the issue ID, and include reproduction/verification notes.
 
-## License
-
-No LICENSE file exists in this repository. Until one is added, all rights are reserved by the author; contributors retain rights to their own contributions. Adding an appropriate open-source license would be a welcome documentation improvement. Until then, do not claim this project is already licensed.
 
 ## Troubleshooting
 
